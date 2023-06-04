@@ -13,56 +13,20 @@ namespace Home_work_26._05._2023
         private string surname;
         private string job_title;
 
-        //public Employer()
-        //{
-        //    birthDate = new DateTime(2000,12,23);
-        //    name = "Петр";
-        //    surname = "Корякин";
-        //    job_title = "Слесарь";
-        //}
+    
         public DateTime BirthDate { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Job_title { get; set; }
-        public Employer(/*DateTime _birthDate, string _name, string _surname,string _job_title*/)
+        public Employer()
         {
-               /* BirthDate = new DateTime(2000, 02, 04);
-                Name = "неизвестно";
-                Surname = "неизвестно";
-                Job_title = "неизвестно";*/
+           
             
         }
 
         
 
-        //public bool SetAge(int _age)
-        //{
-        //    bool flag = false;
-        //    if (_age >= 14 & _age <= 100)
-        //    {
-        //        age = _age;
-        //        flag = true;
-        //    }
-        //    return flag;
-        //}
-
-        //public void SetBirthDate(DateTime _birthDate)
-        //{
-        //    this.birthDate = _birthDate;
-        //}
-        //public void SetName(string _name)
-        //{
-        //    this.name = _name;
-        //}
-        //public void SetSurname(string _surname)
-        //{
-        //    this.surname = _surname;
-        //}
-        //public void SetJob_title(string _job_title)
-        //{
-        //    this.job_title = _job_title;
-        //}
-
+     
         public virtual void PrintWorkTime()
         {
             Console.WriteLine($"Сотрудник {this.Name} " +

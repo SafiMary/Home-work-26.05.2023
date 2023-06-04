@@ -31,7 +31,7 @@ namespace Home_work_26._05._2023
 
         static Employer InputEmployerInBase(YoungEmployer empl)//метод внесение пользователем данных в базу с консоли
         {
-            //YoungEmployer empl = new YoungEmployer();   
+      
             command.CommandText = "INSERT INTO Employer (name,surname, birthDate, job_title) VALUES (:name, :surname, :birthDate,:job_title)";
             Console.WriteLine("Заполните данные для приема сотрудника на работу:\n");
             Console.WriteLine("Имя сотрудника\n");
@@ -52,9 +52,7 @@ namespace Home_work_26._05._2023
                     Console.Write("Введите год в формате ГГГГ: ");
                     int year = int.Parse(Console.ReadLine());
                     DateTime _birthDate = new DateTime(year, month, day);
-                    //string input = Console.ReadLine();
-                    //string[] tmp = input.Split('.');
-                    //var _birthDate = new DateTime(int.Parse(tmp[0]), int.Parse(tmp[1]), int.Parse(tmp[2]));
+
                     empl.BirthDate = _birthDate;
                     command.Parameters.AddWithValue("birthDate", _birthDate);
                 }
